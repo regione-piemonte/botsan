@@ -1,0 +1,39 @@
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+	@return mix(white, $color, $percentage);
+}
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+	@return mix(black, $color, $percentage);
+}
+
+@mixin gradient($color-1, $color-2, $color-3) {
+	background: $color-2; /* Old browsers */
+	background: -moz-radial-gradient(bottom, ellipse cover,  $color-1 0%, $color-2 45%, $color-3 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(bottom, ellipse cover, $color-1 0%, $color-2 45%, $color-3 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at bottom, $color-1 0%, $color-2 45%, $color-3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-1', endColorstr='$color-3', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}
+
+@function hsba($h-hsb, $s-hsb, $b-hsb, $a) {
+	@if $b-hsb == 0 {
+		@return hsla(0, 0, 0, $a)
+	} @else {
+		$l-hsl: ($b-hsb/2) * (2 - ($s-hsb/100));
+		$s-hsl: ($b-hsb * $s-hsb) / if($l-hsl < 50, $l-hsl * 2, 200 - $l-hsl * 2);
+		@return hsla($h-hsb, $s-hsl, $l-hsl, $a);
+	}
+}
+
+@function hsb($h-hsb, $s-hsb, $b-hsb) {
+	@return hsba($h-hsb, $s-hsb, $b-hsb, 1);
+}

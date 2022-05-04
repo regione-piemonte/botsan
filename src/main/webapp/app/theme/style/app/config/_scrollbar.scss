@@ -1,0 +1,37 @@
+@mixin scrollbar($size, $foreground-color, $background-color: mix($foreground-color, white, 50%), $root-element: body) {
+	::-webkit-scrollbar {
+		width: $size;
+		height: $size;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background-color: $foreground-color;
+
+		border-radius: 20px;
+		// border: 3px solid $background-color;
+		border-width: 2px;
+		border-style: solid;
+		border-color: $background-color;
+		// border-color: red;
+
+		cursor: pointer;
+	}
+
+	::-webkit-scrollbar-track {
+		background: $background-color;
+	}
+
+	// For Internet Explorer
+	#{$root-element} {
+		scrollbar-face-color: $foreground-color;
+		scrollbar-track-color: $background-color;
+	}
+
+	// For Firefox
+	#{$root-element} {
+		scrollbar-width: thin; /* "auto" or "thin"  */
+
+		scrollbar-color: $foreground-color $background-color; /* scroll thumb & track */
+		// scrollbar-color: blue orange;
+	}
+}

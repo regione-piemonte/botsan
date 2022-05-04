@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="no-js" lang="it" dir="ltr">
+<head>
+	<base href="/" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>BOTSAN</title>
+	<meta name="description" content="CSI Piemonte - BOTSAN">
+
+	<meta name="google" content="notranslate">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#000000">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/content/images/botsan_logo_cropped-180.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/content/images/botsan_logo_cropped-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/content/images/botsan_logo_cropped-16.png">
+	<link rel="shortcut icon" href="favicon.ico" />
+
+	<link rel="manifest" href="manifest.webapp" />
+	<link rel="stylesheet" href="content/css/loading.css">
+</head>
+<body>
+	<!--[if lt IE 9]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<div id="botsan-chat">
+		<div id="app-loader">
+			<div></div>
+		</div>
+	</div>
+	<noscript>
+		<h1>You must enable javascript to view this page.</h1>
+	</noscript>
+	<script type="text/javascript" language="javascript">
+		window.onload=function() {
+			setTimeout(showError, 5000);
+		}
+		function showError() {
+			const appLoaderElm = document.getElementById("app-loader");
+			if (appLoaderElm) {
+				console.warn('App loading takes more than 5 sec');
+			}
+		}
+	</script>
+	<!-- uncomment this for adding service worker
+		<script>
+			if ('serviceWorker' in navigator) {
+				window.addEventListener('load', function() {
+					navigator.serviceWorker.register('/service-worker.js')
+						.then(function () {
+							console.log('Service Worker Registered');
+						});
+				});
+			}
+		</script>
+	-->
+	<!-- Google Analytics: uncomment and change UA-XXXXX-X to be your site's ID.
+	<script>
+		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+		e.src='//www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+		ga('create','UA-XXXXX-X');ga('send','pageview');
+	</script>-->
+</body>
+</html>

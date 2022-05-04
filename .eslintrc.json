@@ -1,0 +1,10 @@
+{
+	"extends": ["jhipster-react"],
+	"parserOptions": {
+		"project": "./tsconfig.e2e.json"
+	},
+	"rules": {
+		"no-console": "off",
+		"@typescript-eslint/no-inferrable-types": "off"
+	}
+}

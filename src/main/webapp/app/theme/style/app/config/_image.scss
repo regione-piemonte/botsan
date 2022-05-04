@@ -1,0 +1,17 @@
+@mixin img-replace($img, $w:100px, $h:100px, $disp:null) {
+	@debug "[img-replace] img=#{$img}, w=#{$w}, h=#{$h}, disp=#{$disp}'";
+
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	background-image: url('#{$img}');
+	background-repeat: no-repeat;
+	width: $w;
+	height: $h;
+
+	padding-left: $w;
+
+	@if ($disp) {
+		display: $disp;
+	}
+}

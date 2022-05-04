@@ -1,0 +1,32 @@
+// @include scrollbar(.5em, #d9d9d9, rgba(0, 0, 0, 0));
+// @include scrollbar(.5em, #d9d9d9, $app-primary-color);
+// @include scrollbar(.6em, $app-primary-color, #d9d9d9);
+// @include scrollbar(0.5em, $app-primary-color, #d9d9d9);
+// @include scrollbar(0.5em, shade($app-body-background-color, 20%), shade($app-body-background-color, 5%), '.rcw-widget-container');
+
+@include scrollbar(
+	$size: 0.5em,
+	$foreground-color: shade($app-body-background-color, 20%),
+	$background-color: shade($app-body-background-color, 5%),
+	$root-element: '.rcw-widget-container'
+);
+
+// body {
+// 	margin: 0;
+// }
+
+// a {
+// 	color: #533f03;
+// 	// font-weight: bold;
+// }
+
+// * {
+// 	-moz-box-sizing: border-box;
+// 	box-sizing: border-box;
+
+// 	&:after,
+// 	&::before {
+// 		-moz-box-sizing: border-box;
+// 		box-sizing: border-box;
+// 	}
+// }

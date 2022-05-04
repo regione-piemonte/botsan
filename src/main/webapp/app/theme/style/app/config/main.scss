@@ -1,0 +1,20 @@
+// [Attenzione] In questo ed in tutti gli altri file da questo importati devono esser presenti
+// solo variabili, function e mixin.
+
+// [i] in sass (08/2020) non e' possibile definire dinamicamente il nome del file da importare
+// open issue: https://github.com/sass/sass/issues/279
+// $app-theme-name: "default";
+
+// @import 'variables/sizes';
+// @import 'variables/colors';
+
+@import 'animation';
+
+@import 'app';
+@import 'breakpoint';
+
+@import 'color';
+@import 'image';
+@import 'scrollbar';
+
+@import 'color.default';
