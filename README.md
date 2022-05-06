@@ -1,10 +1,11 @@
-# Project Title
-**BotSan Widget**
+# BotSan Widget
 
-# Project Description
+## Project Description
 Webchat automatico utilizzato su alcuni servizi pubblicati sul portale Salute Piemonte capace di interpretare domande poste in linguaggio naturale e di dare una o più riposte pertinenti attraverso l'utilizzo di una piattaforma di Intelligenza Artificiale.
 
-# Configurations
+*BotSan Widget* è una componente di [SOL Assistenza Salute](https://github.com/regione-piemonte/SOLAssistenzaSalute)
+
+## Configurations
 Nei file di configurazione:
 
 - `webpack/webpack.dev.env.js` (per l'installazione in locale e per la generazione della distribuzione per l'ambiente di sviluppo remoto)
@@ -13,14 +14,14 @@ Nei file di configurazione:
 
 valorizzare il parametro SERVER_API_URL con la URL che espone i servizi REST di Intelligenza Artificiale.
 
-# Prerequisites
+## Prerequisites
 I prerequisiti per la compilazione e l'installazione della componente sono i seguenti:
 
-## Software
+### Software
 - [Apache 2.4](https://www.apache.org)
 - [Node.js >=8.9.0](https://nodejs.org)
 
-# Installing
+## Installing
 Per predisporre il progetto ed avviare il server in locale, mandare in esecuzione:
 
 > installazione dipendenze
@@ -29,7 +30,7 @@ Per predisporre il progetto ed avviare il server in locale, mandare in esecuzion
 > per avviare il server locale su http://localhost:9000 e Webpack Server su http://localhost:9060 
 >```npm run start```
 
-# Deployment
+## Deployment
 Per eseguire la build del codice JS ed ottenere la distribuzione del software per l'ambiente di deployment, i comandi da utilizzare sono:
 > build e dist per ambiente di sviluppo
 > ```npm run webpack:build``` 
@@ -56,19 +57,19 @@ Inoltre, nell'ambiente di deployment, in corrispondenza delle pagine HTML dove s
 </html>
 ```
 
-# Versioning
+## Versioning
 Per la gestione del codice sorgente viene utilizzata la metodologia [Semantic Versioning](https://semver.org/).
 
-# Authors
+## Authors
 Gli autori del **BotSan Widget** sono:
 
 - [Angelo Salonia](mailto:angelo.salonia@consulenti.csi.it)
 - [Carlo Peraudo](mailto:carlo.peraudo@csi.it)
 
-# Copyrights
+## Copyrights
 (C) Copyright 2022 Regione Piemonte
 
-# License
+## License
 Questo software è distribuito con licenza MIT.
 
 Consulta il file [LICENSE](LICENSE) per i dettagli sulla licenza.
