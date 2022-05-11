@@ -1,0 +1,64 @@
+# This repository adheres to the publiccode.yml standard by including this 
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/italia/publiccode.yml
+
+publiccodeYmlVersion: '0.2'
+categories:
+  - crm
+  - customer-service-and-support
+  - instant-messaging
+description:
+  it:
+    features:
+      - live chat
+    genericName: 'BotSan Widget, live chat'
+    longDescription: |
+      BotSan Widget è una webchat automatica utilizzata su alcuni servizi
+      pubblicati sul portale Salute Piemonte capace di interpretare domande
+      poste in linguaggio naturale e di dare una o più riposte pertinenti
+      attraverso l'utilizzo di una piattaforma di Intelligenza Artificiale.
+
+
+      BotSan Widget è una componente di [SOL Assistenza
+      Salute](https://github.com/regione-piemonte/SOLAssistenzaSalute) ed è
+      stata realizzata in Node.js usando la React chat [Wolox/react-chat-widget]
+      (https://github.com/Wolox/react-chat-widget)
+    shortDescription: BotSan Widget è la live chat di Regione Piemonte SOL Assistenza Salute.
+developmentStatus: stable
+it:
+  conforme:
+    gdpr: false
+    lineeGuidaDesign: false
+    misureMinimeSicurezza: false
+    modelloInteroperabilita: false
+  countryExtensionVersion: '0.2'
+  piattaforme:
+    anpr: false
+    cie: false
+    pagopa: false
+    spid: false
+  riuso:
+    codiceIPA: r_piemon
+legal:
+  license: MIT
+localisation:
+  availableLanguages:
+    - it
+  localisationReady: false
+maintenance:
+  contacts:
+    - email: marco.giraudo@csi.it
+      name: Marco Giraudo
+  type: internal
+name: BotSan Widget
+platforms:
+  - windows
+  - web
+  - linux
+  - mac
+releaseDate: '2022-05-04'
+softwareType: addon
+softwareVersion: 1.0.0
+url: 'https://github.com/regione-piemonte/botsan'
+usedBy:
+  - Regione Piemonte SOL Assistenza Salute
